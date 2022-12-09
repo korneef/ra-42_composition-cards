@@ -1,9 +1,17 @@
 import './App.css';
-import Hex2RGB from './components/Hex2RGB';
+import Cards from './components/Card';
+import logo from './logo.svg'
 
 function App() {
   return (
     <div className="App">
+
+      <Cards title='Component with image' text='This component have an image'>
+        <img src={logo} className="card-img-top" alt="some" />
+      </Cards>
+
+      <Cards title='Component without image' text='This component not have an image'/>
+
     </div>
   );
 }
